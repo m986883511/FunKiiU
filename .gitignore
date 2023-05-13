@@ -2,3 +2,8 @@
 config.json
 titlekeys.json
 install/
+.eggs
+dist/
+ChangeLog
+AUTHORS
+*.egg-info/

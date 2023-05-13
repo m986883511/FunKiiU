@@ -325,7 +325,7 @@ def process_title_id(title_id, title_key, name=None, region=None, output_dir=Non
     log('\nTitle download complete in "{}"\n'.format(dirname))
 
 
-def main(titles=None, keys=None, onlinekeys=False, onlinetickets=False, download_regions=False, output_dir=None,
+def old_main(titles=None, keys=None, onlinekeys=False, onlinetickets=False, download_regions=False, output_dir=None,
          retry_count=3, patch_demo=True, patch_dlc=True, simulate=False, tickets_only=False):
     print('*******\nFunKiiU {} by cearp and the cerea1killer\n*******\n'.format(__VERSION__))
     titlekeys_data = []
@@ -436,9 +436,9 @@ def log(output):
     print(output)
 
 
-if __name__ == '__main__':
+def main():
     arguments = parser.parse_args()
-    main(titles=arguments.titles,
+    old_main(titles=arguments.titles,
          keys=arguments.keys,
          onlinekeys=arguments.onlinekeys,
          onlinetickets=arguments.onlinetickets,
@@ -449,3 +449,7 @@ if __name__ == '__main__':
          patch_dlc=arguments.patch_dlc,
          simulate=arguments.simulate,
          tickets_only=arguments.tickets_only)
+
+
+if __name__ == '__main__':
+    main()
