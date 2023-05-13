@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-#  FunKiiU 2.2
+#  funkiiu 2.2
 
 from __future__ import unicode_literals, print_function
 
@@ -327,7 +327,7 @@ def process_title_id(title_id, title_key, name=None, region=None, output_dir=Non
 
 def old_main(titles=None, keys=None, onlinekeys=False, onlinetickets=False, download_regions=False, output_dir=None,
          retry_count=3, patch_demo=True, patch_dlc=True, simulate=False, tickets_only=False):
-    print('*******\nFunKiiU {} by cearp and the cerea1killer\n*******\n'.format(__VERSION__))
+    print('*******\nfunkiiu {} by cearp and the cerea1killer\n*******\n'.format(__VERSION__))
     titlekeys_data = []
 
     if download_regions is None:
